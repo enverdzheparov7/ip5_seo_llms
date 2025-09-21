@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<addon scheme="3.0">
+   <id>ip5_seo_llms</id>
+   <version>1.5</version>
+   <priority>700</priority>
+   <position>0</position>
+   <status>active</status>
+   <auto_install>MULTIVENDOR,ULTIMATE</auto_install>
+   <supplier>IP5 Agency</supplier>
+    <supplier_link>https://ip5.agency</supplier_link>
+    <authors>
+        <author>
+            <name>IP5 Agency</name>
+            <email>mail@ip5.agency</email>
+            <url>https://ip5.agency</url>
+            <phone>+7(978) 559-15-55</phone>
+        </author>
+    </authors>
+    <compatibility>
+        <core_version>
+            <min>4.3.5</min>
+        </core_version>   
+    </compatibility>
+     <queries>
+        <item for="install">
+           CREATE TABLE `?:ip5_llms_data` (
+            `llms_id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT,
+            `storefront_id` int(11) UNSIGNED NOT NULL DEFAULT 0,
+            `data` text COLLATE utf8mb3_general_ci NOT NULL,
+            PRIMARY KEY (`llms_id`)
+            ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_general_ci;
+        </item>
+        <item for="install">
+            INSERT IGNORE INTO ?:ip5_llms_data(llms_id, storefront_id, data)
+            VALUES (1, 1, "company_name: IP5
+website: ip5.agency
+industry: E-commerce Development
+services: Website Development, Marketplace Creation, CS-Cart Support, Project Maintenance
+location: Unknown
+founded: Unknown
+specialization: CS-Cart Platform
+description: IP5 is an internet agency focused on creating and supporting e-commerce projects, including online stores and marketplaces, with expertise in the CS-Cart platform.
+contact: Not specified
+status: Active");
+        </item>
+
+        <item for="uninstall">DROP TABLE IF EXISTS `?:ip5_llms_data`;</item>
+    </queries>
+</addon>

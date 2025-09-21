@@ -1,0 +1,34 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: tygh\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language-Team: Russian\n"
+"Language: ru_RU\n"
+
+msgctxt "Addons::name::ip5_seo_llms"
+msgid "-"
+msgstr "IP5 Agency — llms.txt для вкладки SEO"
+
+msgctxt "Addons::description::ip5_seo_llms"
+msgid "-"
+msgstr "Предоставляет краткое, понятное и релевантное содержание для языковых моделей"
+
+msgctxt "Addons::description::ip5_seo_llms"
+msgid "-"
+msgstr "Предоставляет краткое, понятное и релевантное содержание для языковых моделей"
+
+msgctxt "Languages::actions.llms"
+msgid "-"
+msgstr "llms.txt"
+
+msgctxt "Languages::edit_file"
+msgid "edit_file"
+msgstr "Изменить файл"
+
+msgctxt "Languages::llms"
+msgid "llms"
+msgstr "LLMS.txt"
+
+msgctxt "Languages::llms_title"
+msgid "llms_title"
+msgstr "Редактирование: LLMS.txt"
